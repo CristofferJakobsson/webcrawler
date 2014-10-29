@@ -5,8 +5,13 @@ import java.util.*;
 class Utility {
     public static URL urlify(String s) {
 	// Crazy ugly coding
-	try { return new URL(s); } catch (Exception e) {}
-	return null;
+		try { 
+			return new URL(s); 
+		} catch (Exception e) {
+
+		}
+		
+		return null;
     }
     public static String readURL(URL url) {
 	String inputLine;
