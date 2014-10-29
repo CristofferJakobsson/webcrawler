@@ -16,8 +16,10 @@ public class CrawlerDriver {
 		
 
 		Crawler c = new Crawler(10, "http://localhost/", "index.html");
-
+		
+		System.out.println(" ");
 		System.out.println(c.crawl());
+		System.out.println(" ");
 
 	}
 }

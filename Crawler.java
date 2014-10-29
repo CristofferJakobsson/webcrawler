@@ -9,15 +9,10 @@ import java.util.*;
  */
 
 public class Crawler {
-	int max_depth;
-	String base_href;
-	String init_page;
-
-	Pattern TITLE = Pattern.compile("<title>(.*?)</title>",
-					Pattern.MULTILINE | Pattern.CASE_INSENSITIVE);
-
-	Pattern LINK = 	Pattern.compile("<a(.?*)</a>",
-				   	Pattern.MULTILINE | Pattern.CASE_INSENSITIVE);
+	private int max_depth;
+	private String base_href;
+	private String init_page;
+	private String[] 
 
 	/**
 	 * @brief [brief description]
@@ -32,6 +27,10 @@ public class Crawler {
 		this.max_depth = md;
 		this.base_href = bh;
 		this.init_page = ip;
+	}
+
+	public String getPageTitle() {
+
 	}
 
 	/**
