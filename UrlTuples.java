@@ -45,35 +45,35 @@ public class UrlTuples {
   	 * @details [long description]
   	 * @return [description]
   	 */
-  	public String get() 						{ return title + " " + url; }
+  	public String get() { return title + " " + url; }
 
   	/**
   	 * @brief [brief description]
   	 * @details [long description]
   	 * @return [description]
   	 */
-  	public String toString()					{ return title + " " + url; }
+  	public String toString() { return title + " " + url; }
   	
   	/**
   	 * @brief [brief description]
   	 * @details [long description]
   	 * @return [description]
   	 */
-  	public String getUrl() 						{ return this.url; }
+  	public String getUrl() { return this.url; }
 
   	/**
   	 * @brief [brief description]
   	 * @details [long description]
   	 * @return [description]
   	 */
-  	public String getTitle() 					{ return this.title; }
+  	public String getTitle() { return this.title; }
 
   	/**
   	 * @brief [brief description]
   	 * @details [long description]
   	 * @return [description]
   	 */
-  	public ArrayList<UrlTuples> getUrlList() 	{ return this.links; }
+  	public ArrayList<UrlTuples> getUrlList() { return this.links; }
 
   	/**
   	 * @brief [brief description]
@@ -82,14 +82,14 @@ public class UrlTuples {
   	 * @param url [description]
   	 * @return [description]
   	 */
-  	public boolean equals(String url) 			{ return (url == this.url); }
+  	public boolean equals(String url) { return (url == this.url); }
 
   	/**
   	 * @brief [brief description]
   	 * @details [long description]
   	 * @return [description]
   	 */
-  	public int numberOfLinks()					{ return links.size();}
+  	public int numberOfLinks() { return links.size();}
 
   	/**
   	 * @brief [brief description]

@@ -3,18 +3,16 @@ import java.io.*;
 import java.util.*;
 
 /**
- * class CrawlerDriver
+ * @brief [brief description]
+ * @details [long description]
  * 
- * @created 2014-10-27
- * @edited	2013-10-27
- *
+ * @param args [description]
  */
 
 public class CrawlerDriver {
 
 	public static void main(String[] args) {
 		
-
 		Crawler c = new Crawler(10, "http://localhost/", "index.html");
 		
 		System.out.println(" ");

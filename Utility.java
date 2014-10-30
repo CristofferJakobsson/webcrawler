@@ -2,12 +2,36 @@ import java.net.*;
 import java.io.*;
 import java.util.*;
 
+/**
+ * @brief [brief description]
+ * @details [long description]
+ * 
+ * @param s [description]
+ * @return [description]
+ */
+
 class Utility {
+	
+	/**
+	 * @brief [brief description]
+	 * @details [long description]
+	 * 
+	 * @param s [description]
+	 * @return [description]
+	 */
     public static URL urlify(String s) {
 	// Crazy ugly coding
 		try { return new URL(s); } catch (Exception e) {}
 		return null;
     }
+    
+    /**
+     * @brief [brief description]
+     * @details [long description]
+     * 
+     * @param url [description]
+     * @return [description]
+     */
     public static String readURL(URL url) {
 	String inputLine;
 	StringBuffer result = new StringBuffer();
