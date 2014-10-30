@@ -1,13 +1,13 @@
 import java.util.ArrayList;
 
 /**
- * @brief A data structure consisting of a 3-tuple]
- * @details An inductive datastructure designed to store the URL, title and all links of a page.]
+ * @brief A data structure consisting of a 3-tuple
+ * @details An inductive datastructure designed to store the URL, title and all links of a page.
  * 
- * @param url The URL of page currently being observed. Represented as a string.]
- * @param title The title of the page currently being observed. Represented as a String.]
- * @param links An ArrayList of all the links in the page currently being observed. Each element is of the type UlrTuples.]
- * @return A UrlTuple object.]
+ * @param url The URL of page currently being observed. Represented as a string.
+ * @param title The title of the page currently being observed. Represented as a String.
+ * @param links An ArrayList of all the links in the page currently being observed. Each element is of the type UlrTuples.
+ * @return A UrlTuple object.
  */
 
 public class UrlTuples {
@@ -16,13 +16,13 @@ public class UrlTuples {
   	private ArrayList<UrlTuples> links = new ArrayList<UrlTuples>();
 
   	/**
-  	 * @brief The constructor for a UrlTuple.]
-  	 * @details Constructs a UrlTuples object with the input parameters url and title.]
+  	 * @brief The constructor for a UrlTuple.
+  	 * @details Constructs a UrlTuples object with the input parameters url and title.
   	 * 
-  	 * @param url The url of current page.]
-  	 * @param title The title of current page.]
+  	 * @param url The url of current page.
+  	 * @param title The title of current page.
   	 * 
-  	 * @return A UrlTuples object with the aforementioned parameters.]
+  	 * @return A UrlTuples object with the aforementioned parameters.
   	 */
   	public UrlTuples(String url, String title) {
     	this.url = url;
@@ -30,11 +30,11 @@ public class UrlTuples {
   	}
 
   	/**
-  	 * @brief Method to add a link to the links ArrayList.]
-  	 * @details ]
+  	 * @brief Method to add a link to the links ArrayList.
+  	 * @details 
   	 * 
-  	 * @param url The URL of the page that is to be added to ArrayList "links"]
-  	 * @param title The title of the page that is to be added to ArrayList "links"]
+  	 * @param url The URL of the page that is to be added to ArrayList "links"
+  	 * @param title The title of the page that is to be added to ArrayList "links"
   	 */
   	public void addLink(String url, String title) {
   		UrlTuples link = new UrlTuples(url, title);
@@ -42,14 +42,14 @@ public class UrlTuples {
 		this.links.add(link);
   	}
   	/**
-  	 * @brief brief description]
-  	 * @details long description]
-  	 * @return description]
+  	 * @brief brief description
+  	 * @details long description
+  	 * @return description
   	 */
   	public String get() { return url + " " + title; }
 
   	/**
-  	 * @brief Concatenates URL and title of current object to a single string.]
+  	 * @brief Concatenates URL and title of current object to a single string.
   	 * @details 
   	 * @return A single string consisting of the URL and title.
   	 */
