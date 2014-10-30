@@ -1,13 +1,13 @@
 import java.util.ArrayList;
 
 /**
- * @brief [A data structure consisting of a 3-tuple]
- * @details [An inductive datastructure designed to store the URL, title and all links of a page.]
+ * @brief A data structure consisting of a 3-tuple]
+ * @details An inductive datastructure designed to store the URL, title and all links of a page.]
  * 
- * @param url [The URL of page currently being observed. Represented as a string.]
- * @param title [The title of the page currently being observed. Represented as a String.]
- * @param links [An ArrayList of all the links in the page currently being observed. Each element is of the type UlrTuples.]
- * @return [A UrlTuple object.]
+ * @param url The URL of page currently being observed. Represented as a string.]
+ * @param title The title of the page currently being observed. Represented as a String.]
+ * @param links An ArrayList of all the links in the page currently being observed. Each element is of the type UlrTuples.]
+ * @return A UrlTuple object.]
  */
 
 public class UrlTuples {
@@ -16,13 +16,13 @@ public class UrlTuples {
   	private ArrayList<UrlTuples> links = new ArrayList<UrlTuples>();
 
   	/**
-  	 * @brief [The constructor for a UrlTuple.]
-  	 * @details [Constructs a UrlTuples object with the input parameters url and title.]
+  	 * @brief The constructor for a UrlTuple.]
+  	 * @details Constructs a UrlTuples object with the input parameters url and title.]
   	 * 
-  	 * @param url [The url of current page.]
-  	 * @param title [The title of current page.]
+  	 * @param url The url of current page.]
+  	 * @param title The title of current page.]
   	 * 
-  	 * @return [A UrlTuples object with the aforementioned parameters.]
+  	 * @return A UrlTuples object with the aforementioned parameters.]
   	 */
   	public UrlTuples(String url, String title) {
     	this.url = url;
@@ -30,11 +30,11 @@ public class UrlTuples {
   	}
 
   	/**
-  	 * @brief [Method to add a link to the links ArrayList.]
-  	 * @details []
+  	 * @brief Method to add a link to the links ArrayList.]
+  	 * @details ]
   	 * 
-  	 * @param url [The URL of the page that is to be added to ArrayList "links"]
-  	 * @param title [The title of the page that is to be added to ArrayList "links"]
+  	 * @param url The URL of the page that is to be added to ArrayList "links"]
+  	 * @param title The title of the page that is to be added to ArrayList "links"]
   	 */
   	public void addLink(String url, String title) {
   		UrlTuples link = new UrlTuples(url, title);
@@ -42,61 +42,61 @@ public class UrlTuples {
 		this.links.add(link);
   	}
   	/**
-  	 * @brief [brief description]
-  	 * @details [long description]
-  	 * @return [description]
+  	 * @brief brief description]
+  	 * @details long description]
+  	 * @return description]
   	 */
   	public String get() { return url + " " + title; }
 
   	/**
-  	 * @brief [Concatenates URL and title of current object to a single string.]
-  	 * @details []
-  	 * @return [A single string consisting of the URL and title.]
+  	 * @brief Concatenates URL and title of current object to a single string.]
+  	 * @details 
+  	 * @return A single string consisting of the URL and title.
   	 */
   	public String toString() { return url + " " + title; }
   	
   	/**
-  	 * @brief [Extracts the URL from current object.]
-  	 * @details []
-  	 * @return [The URL of current object]
+  	 * @brief Extracts the URL from current object.
+  	 * @details 
+  	 * @return The URL of current object.
   	 */
   	public String getUrl() { return this.url; }
 
   	/**
-  	 * @brief [Extracts the title from current object.]
-  	 * @details []
-  	 * @return [The title of current object.]
+  	 * @brief Extracts the title from current object.
+  	 * @details 
+  	 * @return The title of current object.
   	 */
   	public String getTitle() { return this.title; }
 
   	/**
-  	 * @brief [Extracts the ArrayList conatining all links in the page from current object.]
-  	 * @details []
-  	 * @return [The ArrayList containing all links in current page.]
+  	 * @brief Extracts the ArrayList conatining all links in the page from current object.
+  	 * @details 
+  	 * @return The ArrayList containing all links in current object.
   	 */
   	public ArrayList<UrlTuples> getUrlList() { return this.links; }
 
   	/**
-  	 * @brief [Method to compare equality of a specified string with the url variable of current object.]
-  	 * @details []
+  	 * @brief Method to compare equality of a specified string with the url variable of current object.
+  	 * @details 
   	 * 
-  	 * @param url [String used for comparison]
-  	 * @return [Boolean value true if the strings match, false otherwise.]
+  	 * @param url String used for comparison
+  	 * @return Boolean value true if the strings match, false otherwise.
   	 */
   	public boolean equals(String url) { return (url == this.url); }
 
   	/**
-  	 * @brief [Method to check number of links in a page.]
-  	 * @details []
-  	 * @return [An integer representing the number of elements in ArrayList links]
+  	 * @brief Method to check number of links in a page.
+  	 * @details 
+  	 * @return An integer representing the number of elements in ArrayList links.
   	 */
   	public int numberOfLinks() { return links.size();}
 
   	/**
-  	 * @brief [Main method. Creates a UrlTuples object with parameters specified form input.]
-  	 * @details [Method that creates an instance of a UrlTuple object with parameters specified from input.]
+  	 * @brief Main method. Creates a UrlTuples object with parameters specified form input.
+  	 * @details Method that creates an instance of a UrlTuple object with parameters specified from input.
   	 * 
-  	 * @param args []
+  	 * @param args 
   	 */
   	public static void main(String[] args) {
   		UrlTuples test = new UrlTuples("test.html", "test1");
