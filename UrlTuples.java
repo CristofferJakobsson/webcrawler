@@ -1,5 +1,9 @@
 import java.util.ArrayList;
 public class UrlTuples {
+    private String url;
+    private String title;
+    private ArrayList<UrlTuples> links = new ArrayList<UrlTuples>();
+    
     /**
      * @brief A data structure consisting of a 3-tuple
      * @details An inductive datastructure designed to store the URL, title and all links of a page.
