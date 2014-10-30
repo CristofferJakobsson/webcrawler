@@ -12,7 +12,6 @@ public class Crawler {
 	private int max_depth;
 	private String base_href;
 	private String init_page;
-	private String[] 
 
 	/**
 	 * @brief [brief description]
@@ -30,7 +29,7 @@ public class Crawler {
 	}
 
 	public String getPageTitle() {
-
+		return "";
 	}
 
 	/**
@@ -39,6 +38,7 @@ public class Crawler {
 	 * 
 	 * @return [description]
 	 */
+
 	public String crawl() {
 		Utility page = new Utility();
 		URL newurl = page.urlify(base_href + init_page);
