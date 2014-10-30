@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+
 /**
  * @brief [brief description]
  * @details [long description]
@@ -45,14 +46,14 @@ public class UrlTuples {
   	 * @details [long description]
   	 * @return [description]
   	 */
-  	public String get() { return title + " " + url; }
+  	public String get() { return url + " " + title; }
 
   	/**
   	 * @brief [brief description]
   	 * @details [long description]
   	 * @return [description]
   	 */
-  	public String toString() { return title + " " + url; }
+  	public String toString() { return url + " " + title; }
   	
   	/**
   	 * @brief [brief description]
