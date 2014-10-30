@@ -1,24 +1,9 @@
 import java.util.ArrayList;
-
-/**
- * @brief A data structure consisting of a 3-tuple
- * @details An inductive datastructure designed to store the URL, title and all links of a page.
- * 
- * @param url The URL of page currently being observed. Represented as a string.
- * @param title The title of the page currently being observed. Represented as a String.
- * @param links An ArrayList of all the links in the page currently being observed. Each element is of the type UlrTuples.
- * @return A UrlTuple object.
- */
-
 public class UrlTuples {
-	private String url;
-  	private String title;
-  	private ArrayList<UrlTuples> links = new ArrayList<UrlTuples>();
-
-  	/**
-  	 * @brief The constructor for a UrlTuple.
-  	 * @details Constructs a UrlTuples object with the input parameters url and title.
-  	 * 
+    /**
+     * @brief A data structure consisting of a 3-tuple
+     * @details An inductive datastructure designed to store the URL, title and all links of a page.
+     * 
   	 * @param url The url of current page.
   	 * @param title The title of current page.
   	 * 
@@ -38,8 +23,7 @@ public class UrlTuples {
   	 */
   	public void addLink(String url, String title) {
   		UrlTuples link = new UrlTuples(url, title);
-
-		this.links.add(link);
+		  this.links.add(link);
   	}
   	/**
   	 * @brief brief description
