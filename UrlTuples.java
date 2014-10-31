@@ -1,8 +1,12 @@
+package webcrawler;
+
 import java.util.ArrayList;
+import java.util.*;
+
 public class UrlTuples {
     private String url;
     private String title;
-    private ArrayList<UrlTuples> links = new ArrayList<UrlTuples>();
+    private List<UrlTuples> links = new ArrayList<UrlTuples>();
     
     /**
      * @brief A data structure consisting of a 3-tuple
@@ -29,12 +33,6 @@ public class UrlTuples {
   		UrlTuples link = new UrlTuples(url, title);
 		  this.links.add(link);
   	}
-  	/**
-  	 * @brief brief description
-  	 * @details long description
-  	 * @return description
-  	 */
-  	public String get() { return url + " " + title; }
 
   	/**
   	 * @brief Concatenates URL and title of current object to a single string.
@@ -62,7 +60,7 @@ public class UrlTuples {
   	 * @details 
   	 * @return The ArrayList containing all links in current object.
   	 */
-  	public ArrayList<UrlTuples> getUrlList() { return this.links; }
+  	public List<UrlTuples> getUrlList() { return this.links; }
 
   	/**
   	 * @brief Method to compare equality of a specified string with the url variable of current object.
@@ -71,7 +69,7 @@ public class UrlTuples {
   	 * @param url String used for comparison
   	 * @return Boolean value true if the strings match, false otherwise.
   	 */
-  	public boolean equals(String url) { return (url == this.url); }
+  	public boolean equals(String url) { return this.url.equals(url); }
 
   	/**
   	 * @brief Method to check number of links in a page.
@@ -91,11 +89,16 @@ public class UrlTuples {
 
   		test.addLink("test2.html", "test2");
   		test.addLink("test3.html", "test3");
-		  test.addLink("test4.html", "test4");
-		  test.addLink("test5.html", "test5");
+		test.addLink("test4.html", "test4");
+		test.addLink("test5.html", "test5");
     
-		for (int i = 0; i<test.numberOfLinks(); i++) {
-			System.out.println(test.getUrlList().get(i).getUrl());
-		}
+        System.out.println(test.equals("test.html"));
+
+        System.out.println(test.getUrlList());
+
+        for (int i = 0; i < test.numberOfLinks(); i++)  {
+            System.out.println(test.getUrlList().get(i).getUrl());
+        }
+
   	}
 }
